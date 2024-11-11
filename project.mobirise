@@ -1,0 +1,158 @@
+{
+  "settings": {
+    "name": "volta club",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#360000"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/volta.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://voltacluub.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://voltacluub.github.io/sitemap.xml\n",
+    "mbrsiteDomain": "lrmdqwjzos",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Volta Club™ | Home Official Site",
+        "meta_descr": "An electrifying establishment where digital currency meets discreet charm. Dive into decentralized finance and let sparks fly.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://voltaclub.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/app.volta.club-dashboardvoltaclub.png\" alt=\"Volta Club\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "udWSdluwsI",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#f7f7f7",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#f7f7f7"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#360000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#360000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Volta Club: Powering the Future of Decentralized Entertainment</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving world of blockchain technology and decentralized applications, one platform has emerged as a trailblazer in the realm of decentralized entertainment: <a href=\"https://voltacluub.github.io/\" class=\"text-primary\">Volta Club</a>. Launched in 2022, Volta Club has been at the forefront of revolutionizing the way we experience and engage with digital entertainment, seamlessly integrating blockchain-powered features and leveraging the power of decentralization.<br><br>This article delves into the intricacies of <a href=\"https://app.volta.club/\" class=\"text-primary\">Volta Club</a>, exploring its innovative approach, key features, and the pivotal role it plays in shaping the future of decentralized entertainment. From its unique tokenization model to its immersive virtual experiences, we'll uncover how Volta Club is redefining the entertainment landscape and empowering both content creators and consumers.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding Volta Club: </b><br><b>A Decentralized Entertainment Platform</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  Volta Club is a groundbreaking platform that harnesses the capabilities of blockchain technology to create a decentralized ecosystem for digital entertainment. Driven by the vision of empowering content creators and providing users with unprecedented levels of control and ownership, Volta Club has been at the forefront of the decentralized entertainment revolution.<br><br>At its core, Volta Club is built on the Ethereum blockchain, leveraging the inherent transparency, security, and immutability of this decentralized network. The platform's architecture is designed to facilitate the seamless integration of various entertainment verticals, including music, gaming, and interactive experiences, all within a unified and user-friendly interface.<br><br>One of the key pillars of Volta Club's offering is its unique tokenization model. The platform's native token, VOLTA, serves as the primary medium of exchange and governance within the ecosystem. Content creators, performers, and platform participants can earn VOLTA tokens through their contributions, while users can utilize the tokens to access and engage with a wide range of digital entertainment offerings.<br><br>The decentralized nature of Volta Club empowers content creators to retain greater control over their intellectual property and earnings. By eliminating intermediaries and traditional industry gatekeepers, the platform enables creators to directly connect with their audience, monetize their content, and engage with their fans in unprecedented ways.<br><br>Moreover, Volta Club's decentralized infrastructure ensures that the platform is resistant to censorship, data manipulation, and single points of failure – a crucial advantage in an industry that has historically been plagued by centralized control and power imbalances.<br>\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Immersive Virtual Experiences:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">One of the standout features of Volta Club is its focus on delivering immersive virtual experiences to users. Leveraging cutting-edge technologies, such as virtual reality (VR) and augmented reality (AR), the platform transports users into captivating digital realms where they can engage with content, attend live events, and interact with fellow enthusiasts in a truly immersive manner.<br><br>The Volta Club virtual ecosystem is designed to offer a seamless and engaging user experience. Through the use of cutting-edge 3D graphics, spatial audio, and interactive elements, the platform creates a sense of presence and realism that transcends the traditional boundaries of digital entertainment.<br><br>Users can don their VR headsets and explore virtual concert halls, where they can attend live musical performances by renowned artists. These virtual venues are designed to capture the essence of physical concert experiences, complete with interactive features that allow users to interact with the performers, purchase digital merchandise, and even participate in exclusive Q&amp;A sessions.<br><br>Beyond music, Volta Club also offers a wide range of interactive gaming experiences and virtual events. Users can engage in multiplayer virtual games, compete in esports tournaments, or attend immersive art exhibitions and interactive storytelling sessions – all within the seamless and decentralized Volta Club ecosystem.<br><br>The platform's focus on delivering high-quality, engaging virtual experiences is further bolstered by its commitment to user privacy and security. Volta Club's decentralized infrastructure ensures that user data and digital assets are protected, providing a level of trust and transparency that is often lacking in centralized entertainment platforms.<br><br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Empowering Content Creators:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">At the heart of Volta Club's mission is the empowerment of content creators, empowering them to thrive in the decentralized entertainment landscape. The platform's innovative features and decentralized approach have significantly impacted the way creators can monetize their work and engage with their audience.<br><br>One of the key aspects of Volta Club's creator-centric approach is its tokenization model. By leveraging the power of blockchain technology, Volta Club enables creators to tokenize their digital content, granting them direct control over the monetization and distribution of their work. This model allows creators to retain a larger share of the revenue generated from their creations, as opposed to the traditional industry model, where intermediaries often take a significant cut.<br><br>Moreover, Volta Club's decentralized infrastructure facilitates direct fan-to-creator engagement, enabling creators to build stronger, more authentic relationships with their audience. Through the platform's interactive features and virtual experiences, creators can forge deeper connections with their fans, fostering a sense of community and exclusivity that is often lacking in the traditional entertainment industry.<br><br>Volta Club also provides creators with a suite of tools and resources to help them thrive in the decentralized ecosystem. From intuitive content management systems to advanced analytics and performance tracking, the platform empowers creators to optimize their content, reach new audiences, and unlock unprecedented revenue opportunities.<br><br>By empowering creators and prioritizing their interests, Volta Club has become a beacon of innovation in the entertainment industry, inspiring a new generation of artists, performers, and content creators to embrace the power of decentralization.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Governance and Community Engagement:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Volta Club's commitment to decentralization extends beyond its technical features and into the realm of governance and community engagement. The platform has implemented a robust decentralized governance model, giving its users a direct voice in the decision-making processes that shape the platform's future.<br><br>At the core of Volta Club's governance structure is the VOLTA token, which serves as both a medium of exchange and a tool for community participation. VOLTA token holders are granted voting rights, allowing them to contribute to important decisions, such as platform updates, feature implementations, and the allocation of platform resources.<br><br>This decentralized governance model not only fosters a sense of community ownership but also ensures that the platform's development and evolution are guided by the collective interests of its users. By empowering the community to have a direct stake in the platform's direction, Volta Club has cultivated a vibrant and engaged user base, where everyone has a vested interest in the platform's success.<br><br>Moreover, Volta Club has established various community-driven initiatives and channels to facilitate active engagement and collaboration among its users. The platform's official Discord server, for example, serves as a hub for discussions, idea-sharing, and the coordination of community-led activities, such as virtual events, content creation, and protocol improvements.<br><br>The platform also encourages users to participate in the development of new features and functionalities through its open-source contributions. By making its codebase accessible and welcoming community input, Volta Club has fostered a thriving ecosystem of developers and enthusiasts who are actively shaping the future of decentralized entertainment.<br><br>This community-centric approach has been instrumental in Volta Club's rapid growth and adoption, as users feel empowered to contribute to the platform's evolution and shape the direction of the decentralized entertainment landscape.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Future Developments and Outlook:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As the decentralized entertainment industry continues to evolve, the role of Volta Club is poised to become even more pivotal. The platform's team is committed to driving innovation and expanding the boundaries of what is possible in the realm of decentralized entertainment.<br><br><b>Some of the anticipated future developments for Volta Club include:</b><br><br>1.Multichain integration: Volta Club is expected to expand its ecosystem by integrating with other blockchain networks, allowing for seamless cross-chain interoperability and the inclusion of a broader range of entertainment offerings.<br>2.Decentralized finance (DeFi) integrations: The platform may explore the integration of DeFi protocols, enabling users to leverage their VOLTA tokens for yield farming, liquidity provision, and other decentralized financial activities.<br>3.Non-fungible token (NFT) marketplace: Volta Club is likely to develop a robust NFT marketplace, allowing creators to mint, trade, and showcase their digital assets within the platform's ecosystem.<br>4.Expanded virtual experiences: The platform is expected to continuously enhance its virtual reality and augmented reality capabilities, delivering increasingly immersive and engaging entertainment experiences for its users.<br>5.Decentralized autonomous organization (DAO) governance: Volta Club may transition towards a more decentralized governance model, where the platform's key decisions are made through a DAO structure, further empowering the community.<br><br>As the decentralized entertainment industry continues to evolve, Volta Club's innovative approach and commitment to empowering content creators and users will be crucial in shaping the future of this rapidly expanding space. By remaining at the forefront of technological advancements and staying aligned with the needs of the community, Volta Club is poised to become a leading force in<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "udWSdBZjWP",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
